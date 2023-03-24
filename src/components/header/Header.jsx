@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 import CTA from './CTA';
-import TempProfile from '../../assets/TempProfile.JPG'
+import Avatar from '../../assets/Avatar.JPG'
 import HeaderSocials from './HeaderSocials';
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
 
       <div className='me'>
 
-        <img src={TempProfile}/>
+        <img src={Avatar}/>
 
       </div>
 
