@@ -6,6 +6,7 @@ import {GiNetworkBars} from 'react-icons/gi'
 import {BiMessageEdit} from 'react-icons/bi'
 import {AiOutlineFolderOpen} from 'react-icons/ai'
 import {useState} from 'react'
+import {GiPodiumWinner} from 'react-icons/gi';
 
 
 
@@ -18,6 +19,7 @@ const Nav = () => {
         <a href="#" onClick={()=> setActiveNow('#')} className={activeNow === '#' ? 'active' : ''}><AiOutlineHome/></a>
         <a href="#about" onClick={()=> setActiveNow('#about')} className={activeNow === '#about' ? 'active' : ''}><AiOutlineUser/></a>
         <a href="#experience" onClick={()=> setActiveNow('#experience')} className={activeNow === '#experience' ? 'active' : ''}><GiNetworkBars/></a>
+        <a href="#extra" onClick={()=> setActiveNow('#experience')} className={activeNow === '#extra' ? 'active' : ''}><GiPodiumWinner/></a>
         <a href="#portfolio" onClick={()=> setActiveNow('#portfolio')} className={activeNow === '#portfolio' ? 'active' : ''}><AiOutlineFolderOpen/></a>
         <a href="#contact" onClick={()=> setActiveNow('#contact')} className={activeNow === '#contact' ? 'active' : ''}><BiMessageEdit/></a>
 
