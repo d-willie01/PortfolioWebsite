@@ -5,19 +5,21 @@ import {AiOutlineUser} from 'react-icons/ai'
 import {GiNetworkBars} from 'react-icons/gi'
 import {BiMessageEdit} from 'react-icons/bi'
 import {AiOutlineFolderOpen} from 'react-icons/ai'
-
+import {useState} from 'react'
 
 
 
 const Nav = () => {
+
+  const [activeNow, setActiveNow] = useState('#')
   return (
     
     <nav>
-        <a href="#"><AiOutlineHome/></a>
-        <a href="#about"><AiOutlineUser/></a>
-        <a href="#experience"><GiNetworkBars/></a>
-        <a href="#portfolio"><AiOutlineFolderOpen/></a>
-        <a href="contact"><BiMessageEdit/></a>
+        <a href="#" onClick={()=> setActiveNow('#')} className={activeNow === '#' ? 'active' : ''}><AiOutlineHome/></a>
+        <a href="#about" onClick={()=> setActiveNow('#about')} className={activeNow === '#about' ? 'active' : ''}><AiOutlineUser/></a>
+        <a href="#experience" onClick={()=> setActiveNow('#experience')} className={activeNow === '#experience' ? 'active' : ''}><GiNetworkBars/></a>
+        <a href="#portfolio" onClick={()=> setActiveNow('#portfolio')} className={activeNow === '#portfolio' ? 'active' : ''}><AiOutlineFolderOpen/></a>
+        <a href="#contact" onClick={()=> setActiveNow('#contact')} className={activeNow === '#contact' ? 'active' : ''}><BiMessageEdit/></a>
 
 
     </nav>

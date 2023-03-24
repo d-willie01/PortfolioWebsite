@@ -2,7 +2,9 @@ import React from 'react'
 
 const Accomplishments = () => {
   return (
-    <div>Accomplishments</div>
+    <section id='accomplishments'>
+
+    </section>
   )
 }
 
