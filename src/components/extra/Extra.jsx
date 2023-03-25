@@ -57,7 +57,10 @@ const Extra = () => {
 
 
               <h3>Basketball</h3>
-              <video controls
+              <video style={{
+                height: 300,
+                width: '100%',
+              }} loop autoPlay muted
                     src={Dunk}/>
 
 
