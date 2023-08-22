@@ -1,5 +1,5 @@
 import React from 'react';
-import './extra.css';
+import './Extra.css';
 import {AiOutlineCheck} from 'react-icons/ai'
 import Hike1 from "../../assets/Hike1.jpeg"
 import Dunk from '../../assets/Dunk.mp4';

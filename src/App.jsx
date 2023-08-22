@@ -26,13 +26,17 @@ function App() {
 
     <Nav/>
 
+    <Experience/>
+
+    <Portfolio/>
+
     <About/>
 
-    <Experience/>
+    
 
     <Extra/>
 
-    <Portfolio/>
+    
 
     <Accomplishments/>
 
