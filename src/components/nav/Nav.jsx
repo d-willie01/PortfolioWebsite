@@ -16,6 +16,7 @@ const Nav = () => {
   return (
     
     <nav>
+      
         <a href="#" onClick={()=> setActiveNow('#')} className={activeNow === '#' ? 'active' : ''}><AiOutlineHome/></a>
         <a href="#about" onClick={()=> setActiveNow('#about')} className={activeNow === '#about' ? 'active' : ''}><AiOutlineUser/></a>
         <a href="#experience" onClick={()=> setActiveNow('#experience')} className={activeNow === '#experience' ? 'active' : ''}><GiNetworkBars/></a>

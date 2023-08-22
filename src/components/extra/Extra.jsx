@@ -19,7 +19,7 @@ const Extra = () => {
               <div className='service_head'>
               <h3>Hiking</h3>
 
-              <img src={Hike1} />
+              <img src={Hike1} alt=''/>
 
 
 
@@ -100,7 +100,7 @@ const Extra = () => {
               <div className='service_head'>
               <h3>Tech Pitch Tournaments</h3>
 
-              <img src={Accomplishment}/>
+              <img src={Accomplishment} alt=''/>
 
               </div>
 

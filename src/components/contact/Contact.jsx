@@ -43,7 +43,7 @@ const Contact = () => {
           <FiPhoneCall className='contact_option-icon'/>
             <h4>Call/Text</h4>
             <h5>(520)349-9167</h5>
-            <a href='' target={"_blank"}>Hit me up!</a>
+            <p>Hit me up!</p>
         </article>
 
       </div>

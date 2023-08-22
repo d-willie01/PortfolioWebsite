@@ -58,7 +58,7 @@ const Portfolio = () => {
 
               <div className='portfolio_item-cta'>
               <a href='https://github.com/d-willie01/basketballLandingPage' className='btn' target={"_blank"}>Github</a>
-              <a href='' className='btn btn-primary' target={"_blank"}>Live Demo</a>
+              <a href='#about' className='btn btn-primary' target={"_blank"}>Live Demo</a>
               </div>
           
 
@@ -83,8 +83,8 @@ const Portfolio = () => {
 
 
               <div className='portfolio_item-cta'>
-              <a href='' className='btn' target={"_blank"}>Github</a>
-              <a href='' className='btn btn-primary' target={"_blank"}>Live Demo</a>
+              <a href='#about' className='btn' target={"_blank"}>Github</a>
+              <a href='#about' className='btn btn-primary' target={"_blank"}>Live Demo</a>
               </div>
           
 

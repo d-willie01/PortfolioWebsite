@@ -4,12 +4,13 @@ import './footer.css';
 const Footer = () => {
   return (
     <footer>
-      <a href='#' className='footer_logo'>Created & Designed by Darius Williams</a>
+      
+      <a href='#about' className='footer_logo'>Created & Designed by Darius Williams</a>
 
       <ul className='permalinks'>
         
         
-        <li><a href='#'>Home</a></li>
+        <li><a href='#about'>Home</a></li>
         <li><a href='#about'>About</a></li>
         <li><a href='#experience'>Experience</a></li>
         <li><a href='#activities'>Activities</a></li>
