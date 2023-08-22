@@ -2,7 +2,7 @@ import React from 'react';
 import './contact.css';
 import {HiOutlineMail} from 'react-icons/hi'
 import {FiPhoneCall} from 'react-icons/fi'
-import { useRef } from 'react';
+
 //import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -34,7 +34,7 @@ const Contact = () => {
           <HiOutlineMail className='contact_option-icon'/>
             <h4>Email</h4>
             <h5>dariusw0325@gmail.com</h5>
-            <a href='mailto:dariusw0325@gmail.com' target='_blank'>Send a message</a>
+            <a href='mailto:dariusw0325@gmail.com' target={"_blank"}>Send a message</a>
         </article>
 
 
@@ -43,7 +43,7 @@ const Contact = () => {
           <FiPhoneCall className='contact_option-icon'/>
             <h4>Call/Text</h4>
             <h5>(520)349-9167</h5>
-            <a href='' target='_blank'>Hit me up!</a>
+            <a href='' target={"_blank"}>Hit me up!</a>
         </article>
 
       </div>
