@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import TempProfile from '../../assets/TempProfile.JPG'
+import PFP from '../../assets/PFP.jpg'
 import {GiBasketballBall} from 'react-icons/gi'
 import {AiOutlineCodeSandbox} from 'react-icons/ai'
 import {RiSuitcaseLine} from 'react-icons/ri'
@@ -15,7 +15,7 @@ const About = () => {
      <div className='container about_container'>
       <div className='about_me'>
         <div className='about_me-image'>
-          <img src={TempProfile} alt=''/>
+          <img src={PFP} alt=''/>
 
         </div>
 
