@@ -34,7 +34,7 @@ const Contact = () => {
           <HiOutlineMail className='contact_option-icon'/>
             <h4>Email</h4>
             <h5>dariusw0325@gmail.com</h5>
-            <a href='mailto:dariusw0325@gmail.com' target={"_blank"}>Send a message</a>
+            <a href='mailto:dariusw0325@gmail.com' target="_blank" rel="noopener noreferrer">Send a message</a>
         </article>
 
 
@@ -42,8 +42,8 @@ const Contact = () => {
         <article className='contact_option'>
           <FiPhoneCall className='contact_option-icon'/>
             <h4>Call/Text</h4>
-            <h5>(520)349-9167</h5>
-            <p>Hit me up!</p>
+            <h5>(520) 440-7433</h5>
+            <p>Available for opportunities</p>
         </article>
 
       </div>
@@ -52,7 +52,7 @@ const Contact = () => {
       <form action=''>
 
           <input type='text' name='name' placeholder='Your Full Name' required/>
-          <input type='text' name='email' placeholder='Your Email' required/>
+          <input type='email' name='email' placeholder='Your Email' required/>
           <textarea name='message' rows='7' placeholder='Your Message' required></textarea>
           <button type='submit' className='btn btn-primary'>Send Message</button>
 

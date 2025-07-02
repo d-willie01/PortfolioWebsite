@@ -6,32 +6,15 @@ import HeaderSocials from './HeaderSocials';
 
 const Header = () => {
   return (
-    
     <header>
       <div className='header_container'>
-      <h5>Hello I am</h5>
-      <h1>Darius Williams</h1>
-      
-      <h5 className='text-light'>Fullstack Developer</h5>
-      <CTA/>
-
-      
-
-    
-
-      <HeaderSocials/>
-
-    
-    </div>
-      
+        <h5>Hello, I'm</h5>
+        <h1>Darius Williams</h1>
+        <h5 className='text-light'>Fullstack Developer | Technical Intern</h5>
+        <CTA />
+        <HeaderSocials />
+      </div>
     </header>
-
-
-
-
-
-
-
   )
 }
 

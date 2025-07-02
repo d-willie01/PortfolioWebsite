@@ -1,22 +1,50 @@
 footer
 {
-    background: var(--color-primary);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-variant));
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
     margin-top:7rem;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
 }
 
 footer a 
 {
     color: var(--color-bg);
+    transition: var(--transition);
+    font-weight: 500;
 }
+
+footer a:hover
+{
+    color: var(--color-white);
+    transform: translateY(-2px);
+}
+
 .footer_logo
 {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 2rem;
     display: inline-block;
+    color: var(--color-bg);
+    position: relative;
+    z-index: 1;
 }
 
 .permalinks
@@ -26,30 +54,212 @@ footer a
     justify-content: center;
     gap: 2rem;
     margin: 0 auto 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.permalinks a
+{
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.permalinks a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: var(--transition);
+    z-index: -1;
+}
+
+.permalinks a:hover::before
+{
+    left: 0;
 }
 
 .footer_copyright
 {
     margin-bottom: 4rem;
-    color: var(--color-white)
+    color: var(--color-bg);
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
 }
 
+.footer_socials
+{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
 
+.footer_socials a
+{
+    width: 3rem;
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+}
+
+.footer_socials a:hover
+{
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 
 /* ------------- Media Queries (Medium Device)------------- */
 
 @media screen and (max-width: 1024px)
 {
+    footer
+    {
+        padding: 2.5rem 0;
+        margin-top: 6rem;
+    }
     
+    .footer_logo
+    {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .permalinks
+    {
+        gap: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
 }
 
 /* ------------- Media Queries (small Device)------------- */
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 768px)
 {
+    footer
+    {
+        padding: 2rem 0;
+        margin-top: 5rem;
+    }
+    
+    .footer_logo
+    {
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
+    }
+    
     .permalinks
     {
         flex-direction: column;
-        gap: 1.5;
+        gap: 1rem;
+        margin-bottom: 2rem;
     }
+    
+    .permalinks a
+    {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .footer_socials
+    {
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer_socials a
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+    
+    .footer_copyright
+    {
+        margin-bottom: 3rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    footer
+    {
+        padding: 1.5rem 0;
+        margin-top: 4rem;
+    }
+    
+    .footer_logo
+    {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    .permalinks
+    {
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .permalinks a
+    {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .footer_socials
+    {
+        gap: 0.5rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .footer_socials a
+    {
+        width: 2.25rem;
+        height: 2.25rem;
+        font-size: 0.9rem;
+    }
+    
+    .footer_copyright
+    {
+        margin-bottom: 2rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Animation */
+.footer_logo
+{
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.permalinks
+{
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.footer_socials
+{
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.footer_copyright
+{
+    animation: fadeInUp 0.8s ease-out 0.6s both;
 }

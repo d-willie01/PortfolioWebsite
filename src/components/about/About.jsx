@@ -5,77 +5,51 @@ import {GiBasketballBall} from 'react-icons/gi'
 import {AiOutlineCodeSandbox} from 'react-icons/ai'
 import {RiSuitcaseLine} from 'react-icons/ri'
 
-
 const About = () => {
   return (
     <section id='about'>
-     <h5>get to know...</h5>
-     <h2>ME</h2>
+      <h5>Get to know</h5>
+      <h2>About Me</h2>
 
-     <div className='container about_container'>
-      <div className='about_me'>
-        <div className='about_me-image'>
-          <img src={PFP} alt=''/>
-
+      <div className='container about_container'>
+        <div className='about_me'>
+          <div className='about_me-image'>
+            <img src={PFP} alt='Darius Williams'/>
+          </div>
         </div>
+        
+        <div className='about_content'>
+          <div className='about_cards'>
+            <article className='about_card'>
+              <GiBasketballBall className='about_icon'/>
+              <h5>Athlete</h5>
+              <small>15+ years playing basketball at all levels</small>
+            </article>
+            
+            <article className='about_card'>
+              <AiOutlineCodeSandbox className='about_icon'/>
+              <h5>Fullstack Developer</h5>
+              <small>4+ years building scalable applications</small>
+            </article>
+            
+            <article className='about_card'>
+              <RiSuitcaseLine className='about_icon'/>
+              <h5>Technical Intern</h5>
+              <small>Currently at Carvana, supporting infrastructure</small>
+            </article>
+          </div>
 
-      </div>
+          <p>
+            Resourceful Fullstack Developer with 4+ years of experience building scalable applications, 
+            automating workflows, and supporting infrastructure. Proficient in JavaScript, Python, React, 
+            and CI/CD practices. Adept at reducing inefficiencies, streamlining deployments, and delivering 
+            intuitive user experiences. Currently completing a B.S. in Bioinformatics at Arizona State University 
+            with a focus on data science and software systems.
+          </p>
 
-      
-      
-      <div className='about_content'>
-        <div className='about_cards'>
-          
-          
-          <article className='about_card'>
-            <GiBasketballBall className='about_icon'/>
-            <h5>Athlete</h5>
-            <small>15+ years playing all levels of basketball</small>
-
-          </article>
-          
-          
-          <article className='about_card'>
-            <AiOutlineCodeSandbox className='about_icon'/>
-            <h5>Programming Specialist</h5>
-            <small>2+ years of coding in Phoenix, AZ</small>
-
-          </article>
-          
-          
-          <article className='about_card'>
-            <RiSuitcaseLine className='about_icon'/>
-            <h5>Entrepreneur</h5>
-            <small>Mobile app generating revenue, as well as contract work and a FE</small>
-
-          </article>
-
-
+          <a href='#contact' className='btn btn-primary'>Let's Talk!</a>
         </div>
-
-        <p> Hello! my name is Darius Williams and I am currently a fullstack developer.
-          In addition to coding, I love to play basketball and have played against every level and type of player
-          there is! I am also a founder to a mobile app that not only generates revenue,
-          but assists local organizations in their efforts to aquire genuine loyal customers! I do contract work for businesses
-          as well to create websites and create other forms of income using software.
-        </p>
-
-        <a href='#contact' className='btn btn-primary'>Lets talk!</a>
-
-
-
-
-
-
-
       </div>
-
-
-
-
-
-     </div>
-
     </section>
   )
 }
